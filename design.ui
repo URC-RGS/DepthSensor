@@ -513,7 +513,7 @@
            <widget class="QComboBox" name="UDP_port_box"/>
           </item>
           <item>
-           <widget class="QPushButton" name="GUI_update">
+           <widget class="QPushButton" name="UDP_update">
             <property name="text">
              <string>Update</string>
             </property>
