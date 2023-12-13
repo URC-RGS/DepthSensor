@@ -1,7 +1,7 @@
 import serial
 
 
-class Rov_SerialPort:
+class SerialPort:
     def __init__(self, config_serial : dict):
         '''`Класс для работы с последовательным портом'''
 
@@ -40,4 +40,7 @@ class Rov_SerialPort:
 
         except:
             self.logi.warning('Error send data')
+
+    def close(self):
+        self.serial_port.close()
             
