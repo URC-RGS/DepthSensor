@@ -1,39 +1,3 @@
-
-
-
-# ports = serial.tools.list_ports.comports()
-
-# for port, desc, hwid in sorted(ports):
-#     print(port)
-        
-# config_logi = {'path_log' : 'logs/',
-#                'log_level' : 'debug'}
-
-# logi = Logger(config_logi)
-
-#         # конфиг для сериал порта 
-# config_serial  = {'logger' : logi,
-#                 'port' : '/dev/ttyACM0',
-#                 'bitrate' : 57600,
-#                 'timeout' : 1,
-#                 'debag' : False}
-
-# serial_port = Rov_SerialPort(config_serial)
-
-# name = 'data/' + '-'.join('-'.join('-'.join(str(datetime.now()).split()).split('.')).split(':')) + '.csv'
-
-# with open(name, mode="a", encoding='utf-8') as w_file:
-#         file_writer = csv.writer(w_file, delimiter = ",", lineterminator="\r")
-#         file_writer.writerow(['time', 'pressure', 'temp', 'depth'])
-        
-# while True:
-#         data = [str(datetime.now())] + [float(i) for i in serial_port.receiver_data().split(' ')]
-        
-#         with open(name, mode="a", encoding='utf-8') as w_file:
-#                 file_writer = csv.writer(w_file, delimiter = ",", lineterminator="\r")
-#                 file_writer.writerow(data)
-
-
 from datetime import datetime
 from distutils import util
 from configparser import ConfigParser
